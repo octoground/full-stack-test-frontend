@@ -1,0 +1,504 @@
+@font-face {
+	font-family: 'Test'; 
+	src: url(/fonts/icomoon.ttf); 
+}
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+*{
+    font-family: 'Inter';
+}
+.snake_case_btn{
+	background: #0962E8;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 15px 20px;
+	border-radius: 12px;
+}
+.snake_case_maxConent{
+	max-width: 1144px;
+	margin: 0 auto;
+	padding: 0 60px;
+}
+.snake_case{
+	&_main{
+		height: 678px;
+		position: relative;
+		background: #CBECFF;
+		&_header{
+			display: flex;
+			justify-content: right;
+			padding-top: 25px;
+			ul{
+				display: flex;
+				li{
+					padding: 8px;
+					font-size: 14px;
+				}
+				li:nth-child(1){
+					margin-right: 15px;
+				}
+				li.snake_case_active{
+					background-color: #ffffff;
+					border-radius: 50%;
+					color: #0962E8;
+				}
+			}
+		}
+
+		&_demo{
+			display: flex;
+			.snake_case_right{
+				width: 64%;
+			}
+			.snake_case_left{
+				min-width: 300px;
+				width: 36%;
+				margin-top: 75px;
+				h1{
+					font-size: 64px;
+					font-weight: 700;
+					color: #29374E;
+					span{
+						color: #0962E8;
+						background: #ffffff;
+						padding: 0px 15px;
+						border-radius: 20px;
+					}
+				}
+				p{
+					font-size: 22px;
+					font-weight: 400;
+					margin: 15px 0 40px 0;
+				}
+			}
+
+		}
+
+		&_footer{
+			position: absolute;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+			grid-row-gap: 20px;
+			grid-column-gap: 20px;
+			transform: translateY(-15px);
+			max-width: 1024px;
+			width: calc(100% - 120px);
+			// margin: 50px auto 0 auto;
+			
+			// padding: 0 60px;
+			.snake_case_item{
+				background: #ffffff;
+				box-shadow: 6px 4px 12px 0px #0000000D;
+				border-radius: 20px;
+				padding: 20px;
+				display: flex;
+				p{
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 22.4px;
+				}
+				span{
+					font-size: 24px;
+					background: #EFF9FF;
+					border-radius: 50%;
+					height: fit-content;
+					padding: 5px;
+				}
+			}
+		}
+
+	}
+
+
+	&_products{
+		margin-top: 150px;
+		h2{
+			text-align: center;
+			font-size: 38px;
+			line-height: 49.4px;
+			font-weight: 500;
+			margin-bottom: 45px;
+			span{
+				color: #0962E8;
+			}
+		}
+		&_container{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			& > div{
+				background: #E9F6FF;
+				border-radius: 30px;
+				max-width: 502px;
+				display: flex;
+				padding: 35px 20px 0 20px;
+				img{
+					height: 291px;
+					width: 218px;
+				}
+				span{
+					font-weight: 600;
+					font-size: 20px;
+					line-height: 28px;
+					margin-bottom: 12px;
+					display: block;
+				}
+				p{
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 19.6px;
+				}
+				img{
+					box-shadow: 8px -8px 16px 0px #0000000F;
+				}
+			}
+		}
+	}
+
+	&_worth{
+		margin-top: 115px;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-column-gap: 20px;
+		margin-bottom: 100px;
+		.left{
+			h2{
+				font-family: 'Euclid Circular A';
+				font-weight: 500;
+				font-size: 38px;
+				line-height: 49.4px;
+				letter-spacing: -3%;
+				span{
+					font-family: 'Inter';
+					color: #0962E8;
+				}
+			}
+			p{
+				font-weight: 500;
+				font-size: 14px;
+				margin: 20px 0 35px 0;
+				line-height: 19.6px;
+			}
+		}
+		.right{
+			display: grid;
+			grid-template-columns: auto auto;
+			grid-column-gap: 20px;
+			grid-row-gap: 20px;
+			img{
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 450px){
+	.snake_case_btn{
+		width: 100%;
+	}
+	.snake_case_maxConent{
+		padding: 0 15px;
+	}
+	.snake_case_main {
+		overflow: hidden;
+		height: auto;
+		&_demo{
+			flex-wrap: wrap-reverse;
+			.snake_case_left, .snake_case_right{
+				width: 100%;
+			}
+			.snake_case_left{
+				margin: 0;
+			}
+			img {
+				max-width: 410px;
+			}
+			p{
+				font-size: 16px !important;
+				line-height: 20.8px !important;
+				margin: 10px 0 !important;
+			}
+		}
+		h1{
+			font-size: 44px !important;
+		}
+		
+		&_footer{
+			position: inherit;
+			transform: translateY(0);
+			margin: 20px 0 30px 0;
+			grid-template-columns: auto auto;
+			grid-column-gap: 15px;
+			grid-row-gap: 20px;
+			.snake_case_item{
+				height: 118px;
+				padding: 15px;
+				flex-wrap: wrap-reverse;
+				&:nth-child(3) p{
+					margin-bottom: 25px !important;
+
+				}
+				p{
+					font-size: 14px !important;
+					line-height: 19.6px;
+					margin-bottom: 5px;
+					
+				}
+				span{
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+
+	.snake_case_products{
+		margin-top: 40px;
+		h2{
+			font-size: 24px;
+			line-height: 31.2px;
+			margin-bottom: 25px;
+		}
+		&_container{
+			flex-wrap: wrap;
+			span{
+				font-size: 16px;
+			}
+			p{
+				font-size: 13px;
+			}
+			img{
+				height: inherit !important;
+				width: 100% !important;
+			}
+			.left{
+				margin-bottom: 15px;
+			}
+			.left, .right{
+				display: grid;
+				grid-template-columns: 54% 46%;
+				grid-column-gap: 5px;
+			}
+		}
+	}
+
+	.snake_case_worth{
+		margin-top: 40px;
+		grid-template-columns: auto;
+		.left{
+			text-align: center;
+			h2{
+				line-height: 31.2px;
+				font-size: 24px;
+			}
+			p{
+				font-size: 14px;
+				line-height: 19.6px;
+				margin: 4px 12px;
+			}
+		}
+		.right{
+			margin-top: 37px;
+			grid-column-gap: 15px;
+			grid-template-columns: 48% 48%;
+			.snake_case_item{
+				box-shadow: 6px 4px 12px 0px #0000000D;
+				border-radius: 20px;
+				// background-color: #0962E8;
+				padding: 0 11px 16px 18px;
+				p{
+					font-size: 14px;
+				}
+				img{
+					transform: translateY(-5px);
+				}
+			}
+		}
+	}
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	.snake_case_maxConent{
+		padding: 0 15px !important;
+	}
+	.snake_case_main_footer {
+		transform: translateY(-15px);
+		width: 100%;
+	}
+}
+/* Landscape phones and smaller */
+@media (max-width: 768px) {
+	.snake_case_maxConent {
+		padding: 0 30px;
+	}
+	.snake_case_main{
+		&_demo{
+			text-align: center;
+			flex-wrap: wrap-reverse;
+			.snake_case_right{
+				width: 100%;
+			}
+			.snake_case_left {
+				width: inherit;
+				h1{
+					font-size: 54px;
+				}
+				p{
+					font-size: 17px;
+					margin: 15px 0;
+				}
+			}
+		}
+		&_footer {
+			.snake_case_item{
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+	}
+	.snake_case_products h2{
+		line-height: 42.4px;
+	}
+	.snake_case_worth{
+		margin-top: 75px;
+		grid-template-columns: auto;
+		.left{ 
+			text-align: center;
+			h2{
+				line-height: 42.4px;
+			}
+			p{
+				width: 70%;
+				margin: 0 auto;
+				margin-top: 15px;
+			}
+			button{
+				margin: 10px 0 20px 0;
+			}
+		}
+		.right .snake_case_item{
+			box-shadow: 6px 4px 12px 0px #0000000D;
+			border-radius: 20px;
+			padding: 20px 20px;
+		}
+	}
+}
+
+/*По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:*/
+
+@media (max-width: 1124px) {
+	.snake_case_products_container{
+		justify-content: center;
+		.left{
+			margin-bottom: 20px;
+		}
+	}
+}
+@media (max-width: 1024px) {
+	.snake_case_products{
+		margin-top: 75px;
+	}
+	.snake_case_main{
+		height: inherit;
+		&_footer {
+			margin: 50px auto 0 auto;
+			position: inherit;			
+		}
+	}
+}
+@media (max-width: 921px) {
+	.snake_case_worth{
+		margin-top: 75px;
+	}
+}
